@@ -2,6 +2,14 @@
 2. 기능구현 목록 작성
 3. controller,service,domain,view,util,constants 패키지 생성
 
+## public class Application
+```java
+public static void main(String[] args) {
+    _Controller controller = new _Controller();
+    controller.run();
+}
+```
+
 ## public class Controller
 ```java
     private _Service service = new _Service();

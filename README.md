@@ -15,7 +15,6 @@ public enum ErrorMessage {
 
     public String getMessage() {
         return PREFIX + message;
-
     }
 }
 ```

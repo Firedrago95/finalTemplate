@@ -3,13 +3,13 @@
 3. controller,service,domain,view,util,constants 패키지 생성
 
 ## public class Controller
----java
+```java
     private 1Service service = new 1Service();
 
     public void run() {
 
     }
----
+```
 
 ## public enum ErrorMessage 
 ```java

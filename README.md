@@ -39,11 +39,22 @@ public static void main(String[] args) {
 ## public class InputValidator
 ```java
     
-    private final Pattern _REGEX = Pattern.compile("");
+    private static final Pattern _REGEX = Pattern.compile("");
 
-    private void checkEmpty(String input) {
+    public static void validate1(String input) {
+        checkEmpty(input);
+        checkOrderForm(input);
+    }
+
+    private static void checkEmpty(String input) {
         if (input == null || input.isEmpty()) {
             throw new IllegalArgumentException(ErrorMessage.EMPTY_VALUE.getMessage());
+        }
+    }
+
+    private static void checkOrderForm(String input) {
+        if (!_REGEX.matcher(input).matches()) {
+            throw new IllegalArgumentException(ErrorMessage.ORDER_FORM.getMessage());
         }
     }
 ```

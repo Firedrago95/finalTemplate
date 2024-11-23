@@ -2,10 +2,11 @@
 2. 기능구현 목록 작성
 3. controller,service,domain,view,util,constants 패키지 생성
 
-- 에러 메시지 enum 클래스
+- public enum ErrorMessage 
 ```java
-public enum ErrorMessage {
 
+    EMPTY_VALUE("빈 값을 입력하셨습니다. 값을 입력해주세요");
+    
     private final String PREFIX = "[ERROR] ";
     private String message;
 
@@ -15,6 +16,6 @@ public enum ErrorMessage {
 
     public String getMessage() {
         return PREFIX + message;
+
     }
-}
 ```

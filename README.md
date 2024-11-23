@@ -33,7 +33,7 @@
     
     private final Pattern _REGEX = Pattern.compile("");
 
-    public validate_(String input) {
+    private void checkEmpty(String input) {
         if (input == null || input.isEmpty()) {
             throw new IllegalArgumentException(ErrorMessage.EMPTY_VALUE.getMessage());
         }

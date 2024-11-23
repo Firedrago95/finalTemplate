@@ -16,6 +16,5 @@
 
     public String getMessage() {
         return PREFIX + message;
-
     }
 ```

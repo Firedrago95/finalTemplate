@@ -4,10 +4,8 @@
 
 ## public class Application
 ```java
-public static void main(String[] args) {
-    _Controller controller = new _Controller();
+     _Controller controller = new _Controller();
     controller.run();
-}
 ```
 
 ## public class Controller

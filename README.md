@@ -20,7 +20,7 @@
 ## public enum ErrorMessage 
 ```java
 
-   EMPTY_VALUE("빈 값을 입력하셨습니다. 값을 입력해주세요."),
+    EMPTY_VALUE("빈 값을 입력하셨습니다. 값을 입력해주세요."),
     WRONG_FORM("형식에 맞지 않는 값을 입력하셨습니다. 다시 입력해주세요.");
 
     private final String PREFIX = "[ERROR] ";

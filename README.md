@@ -20,17 +20,18 @@
 ## public enum ErrorMessage 
 ```java
 
-    EMPTY_VALUE("빈 값을 입력하셨습니다. 값을 입력해주세요");
-    
-    private final String PREFIX = "[ERROR] ";
-    private String message;
+    private static final Pattern _REGEX = Pattern.compile("");
 
-    ErrorMessage(String message) {
-        this.message = message;
+    private static void checkEmpty(String input) {
+        if (input == null || input.isEmpty()) {
+            throw new IllegalArgumentException(ErrorMessage.EMPTY_VALUE.getMessage());
+        }
     }
 
-    public String getMessage() {
-        return PREFIX + message;
+    private static void checkOrderForm(String input) {
+        if (!_REGEX.matcher(input).matches()) {
+            throw new IllegalArgumentException(ErrorMessage._FORM.getMessage());
+        }
     }
 ```
 

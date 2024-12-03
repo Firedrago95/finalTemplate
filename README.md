@@ -48,7 +48,7 @@
 
     private static void check_Form(String input) {
         if (!_REGEX.matcher(input).matches()) {
-            throw new IllegalArgumentException(ErrorMessage._FORM.getMessage());
+            throw new IllegalArgumentException(ErrorMessage.WRONG_FORM.getMessage());
         }
     }
 ```

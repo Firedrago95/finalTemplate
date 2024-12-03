@@ -12,8 +12,7 @@
         }
     }
   ```
-💡 여러 구분자 처리 및 동적 구분자 활용
-    -  여러 구분자 지원
+- 💡 여러 구분자 처리 및 동적 구분자 활용
   ```java
   private static void checkDuplicate(String input) {
     // 여러 구분자를 지원 (콤마, 세미콜론, 콜론)
@@ -25,5 +24,5 @@
             throw new IllegalArgumentException("중복된 이름: " + name);
         }
     }
-}
+  }
   ```

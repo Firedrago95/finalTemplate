@@ -60,12 +60,13 @@
     @ParameterizedTest
     @ValueSource(strings = {"",})
     void 입력_예외_테스트(String input) {
-        
+        Assertions.assertThrows(IllegalArgumentException.class,
+            () -> InputValidator.validate_(input));
     }
 
     @ParameterizedTest
     @ValueSource(strings = {})
     void 정상_입력_테스트(String input) {
-        
+        Assertions.assertDoesNotThrow(() -> InputValidator.validate_(input));
     }
 ```

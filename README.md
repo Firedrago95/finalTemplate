@@ -70,3 +70,16 @@
         Assertions.assertDoesNotThrow(() -> InputValidator.validate_(input));
     }
 ```
+
+## 도메인Validator
+```java
+    @Test
+    void _테스트() {
+        // given
+
+        // when & then
+        assertThrows(IllegalArgumentException.class,
+            () -> _Validator.validate_());
+        assertDoesNotThrow(() -> _Validator.validate_());
+    }
+```

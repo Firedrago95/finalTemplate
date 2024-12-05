@@ -52,3 +52,20 @@
         }
     }
 ```
+
+# 테스트 코드 
+## InputValidatorTest
+
+```java
+    @ParameterizedTest
+    @ValueSource(strings = {})
+    void 입력_예외_테스트(String input) {
+        
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {})
+    void 정상_입력_테스트(String input) {
+        
+    }
+```

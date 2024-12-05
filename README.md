@@ -58,7 +58,7 @@
 
 ```java
     @ParameterizedTest
-    @ValueSource(strings = {})
+    @ValueSource(strings = {"",})
     void 입력_예외_테스트(String input) {
         
     }
